@@ -1,0 +1,34 @@
+#herosection {
+  #secondSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    #rightsecond {
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 75%;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 838px) {
+  #herosection {
+    #secondSection {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      #rightsecond {
+        width: auto;
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
