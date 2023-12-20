@@ -65,6 +65,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -77,6 +81,7 @@
       >
         <a
           href="index.html"
+          title="Home"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
@@ -89,7 +94,30 @@
             >Think Digital</span
           >
         </a>
-
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
         <div
           id="mega-menu-full-image"
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-0"
@@ -132,6 +160,7 @@
         </div>
       </div>
     </header>
+
     <div id="herosection" class="">
       <section
         id="firstSection"
@@ -203,7 +232,7 @@
                 class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
               >
                 <a
-                  href="#"
+                  href="./services.html"
                   class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
                 >
                   View All Services
@@ -241,6 +270,21 @@
         </div>
       </section>
     </div>
+    <a
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      href="https://wa.me/message/OWB5KVYAKS4XP1"
+      id="watsup"
+      class="fixed bottom-20 lg:bottom-32 right-10 lg:right-10"
+    >
+      <img
+        class=""
+        src="Assets/Images/whatsup.png"
+        alt="icon"
+        title="whats up think digital ug"
+      />
+    </a>
 
     <footer class="bg-white dark:bg-gray-900">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -366,6 +410,7 @@
     <script type="module" src="/Assets/Js/typed.mjs"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script>
       AOS.init();
     </script>
