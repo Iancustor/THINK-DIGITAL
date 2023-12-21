@@ -1,3 +1,4 @@
+import API from "./services.json";
 const today = new Date();
 const year = today.getFullYear();
 // console.log(year);
@@ -10,7 +11,7 @@ yearContainer.textContent = year;
 const servicesContainer = document.getElementById("servicesContainer");
 console.log(servicesContainer);
 
-const API = "services.json";
+// const API = "services.json";
 
 //fetch Services
 
