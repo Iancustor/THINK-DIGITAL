@@ -1,20 +1,9 @@
-// import API from "/services.json";
-const today = new Date();
-const year = today.getFullYear();
-// console.log(year);
-// curent year
-const yearContainer = document.querySelector(".year");
-yearContainer.textContent = year;
-
-//Services
-
+// import API from "./services.json";
 const servicesContainer = document.getElementById("servicesContainer");
 console.log(servicesContainer);
 
 const API = "services.json";
-
 //fetch Services
-
 async function fetchServices(API) {
   try {
     const response = await fetch(API);
@@ -42,3 +31,10 @@ function renderServices(services) {
   });
 }
 fetchServices(API);
+
+const today = new Date();
+const year = today.getFullYear();
+// console.log(year);
+// curent year
+const yearContainer = document.querySelector(".year");
+yearContainer.textContent = year;
