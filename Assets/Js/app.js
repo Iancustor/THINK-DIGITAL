@@ -1,21 +1,59 @@
-// import API from "./services.json";
 const servicesContainer = document.getElementById("servicesContainer");
-console.log(servicesContainer);
+// console.log(servicesContainer);
 
-const API = "services.json";
-//fetch Services
-async function fetchServices(API) {
-  try {
-    const response = await fetch(API);
-    const data = await response.json();
-    renderServices(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
+const services = [
+  {
+    id: 4,
+    title: "Content Creation",
+    category: "Services",
+    image: "/Assets/Images/content.jpg",
+    description:
+      "The best Fresh finds and great deals Exploring the aisles of deliciousness in AT Store Groceries. Stock Yours Now",
+  },
+  {
+    id: 1,
+    title: "Digital Marketing",
+    category: "Services",
+    image:
+      "/Assets/Images/digital-marketing-search-engine-optimisation_36325-2203.jpg",
+    description:
+      "Our digital marketing services are designed to help your brand stand out in the crowded digital landscape.",
+  },
+  {
+    id: 2,
+    title: "Web Designing",
+    category: "Services",
+    image: "/Assets/Images/web-development.jpg",
+    description:
+      "Think Digital excels in creative, responsive web design. Our skilled team crafts tailored solutions prioritizing client goals. Proven excellence ",
+  },
+  {
+    id: 3,
+    title: "Graphics Designing",
+    category: "Services",
+    image: "/Assets/Images/graphics.jpg",
+    description:
+      "Think Digital's graphic design service delivers visually compelling solutions. From branding to visual identity, we ensure impactful designs .",
+  },
+  {
+    id: 5,
+    title: "Photography",
+    category: "Services",
+    image: "/Assets/Images/photographer.jpg",
+    description:
+      "Think Digital's photography service captures moments with precision and creativity. From professional shoots to product photography.",
+  },
+  {
+    id: 6,
+    title: "Videography",
+    category: "Services",
+    image: "/Assets/Images/videography.jpg",
+    description:
+      "Creating compelling visual stories. From promotional content to corporate narratives, enhancing your brand's digital presence.",
+  },
+];
 
 function renderServices(services) {
-  servicesContainer.innerHTML = ``;
   services.forEach((service) => {
     const serviceHtml = `
     <a href="/service.html?id=${service.id}" class="flex flex-col items-center bg-gradient-to-b from-black to-blue-700 border  rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-900  ">
@@ -30,11 +68,12 @@ function renderServices(services) {
     servicesContainer.insertAdjacentHTML("afterbegin", serviceHtml);
   });
 }
-fetchServices(API);
+renderServices(services);
 
 const today = new Date();
 const year = today.getFullYear();
 // console.log(year);
+
 // curent year
 const yearContainer = document.querySelector(".year");
 yearContainer.textContent = year;
