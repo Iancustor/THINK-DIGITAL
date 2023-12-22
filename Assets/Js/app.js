@@ -67,7 +67,7 @@ function renderServices(services) {
     servicesContainer.insertAdjacentHTML("afterbegin", serviceHtml);
   });
 }
-renderServices(services);
+// renderServices(services);
 
 const today = new Date();
 const year = today.getFullYear();
