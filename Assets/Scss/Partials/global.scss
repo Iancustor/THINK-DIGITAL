@@ -11,3 +11,21 @@
     width: 100px;
   }
 }
+#contactSection {
+  #contactSection1 {
+    background: linear-gradient(
+        -160deg,
+        rgba(62, 8, 186, 0.494),
+        rgba(7, 1, 17, 0.405)
+      ),
+      url(../../Images/design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #contactSection2 {
+    i {
+      font-size: 4rem;
+      color: blue;
+    }
+  }
+}
