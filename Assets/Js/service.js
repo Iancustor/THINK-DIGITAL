@@ -68,13 +68,13 @@ function renderService(service) {
         <h1 class="serviceHeading mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
           ${service.title}
         </h1>
-        <p class="serviceDesptn mb-8 text-lg font-normal text-black lg:text-xl sm:px-16 lg:px-48">
+        <p class="serviceDesptn mb-8 text-lg font-normal text-black w-auto lg:text-xl sm:px-16 lg:px-8">
           ${service.description}
         </p>
       </div>
       <div class="flex lg:flex-row gap-4 mb-3 items-center justify-center">
         <div class="object-contain">
-          <img src="${service.image}" alt="${service.title}" class="image h-96 w-80 lg:max-w-full lg:w-[50rem] rounded-sm" />
+          <img src="${service.image}" alt="${service.title}" class="image h-96 w-96 lg:max-w-full lg:w-[50rem] rounded-sm" />
         </div>
       </div>
     `;
