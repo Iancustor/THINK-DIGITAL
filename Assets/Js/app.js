@@ -58,8 +58,8 @@ function renderServices(services) {
       <a href="/service.html?title=${service.title}" class="flex flex-col items-center bg-gradient-to-b from-black to-indigo-700 border rounded-lg shadow w-72 md:w-auto lg:w-auto md:flex-row md:max-w-xl hover:bg-gray-900 ">
         <img class="object-cover w-64 rounded-t-lg h-48  md:rounded-none md:rounded-s-lg" src="${service.image}" alt="${service.title}">
         <div class="flex flex-col justify-between p-4 leading-normal">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${service.title}</h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${service.description}</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">${service.title}</h5>
+          <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">${service.description}</p>
         </div>
       </a>
     `;
