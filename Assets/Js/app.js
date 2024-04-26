@@ -6,7 +6,7 @@ const services = [
     id: 4,
     title: "Content Creation",
     category: "Services",
-    image: "/Images/content.jpg",
+    image: "./Images/content.jpg",
     description:
       "The best Fresh finds and great deals Exploring the aisles of deliciousness in AT Store Groceries. Stock Yours Now",
   },
@@ -14,7 +14,7 @@ const services = [
     id: 1,
     title: "Digital Marketing",
     category: "Services",
-    image: "/Images/digital-marketing.jpg",
+    image: "./Images/digital-marketing.jpg",
     description:
       "Our digital marketing services are designed to help your brand stand out in the crowded digital landscape.",
   },
@@ -22,7 +22,7 @@ const services = [
     id: 2,
     title: "Web Designing",
     category: "Services",
-    image: "/Images/web-development.jpg",
+    image: "./Images/web-development.jpg",
     description:
       "Think Digital excels in creative, responsive web design. Our skilled team crafts tailored solutions prioritizing client goals. Proven excellence ",
   },
@@ -30,7 +30,7 @@ const services = [
     id: 3,
     title: "Graphics Designing",
     category: "Services",
-    image: "/Images/graphics.jpg",
+    image: "./Images/graphics.jpg",
     description:
       "Think Digital's graphic design service delivers visually compelling solutions. From branding to visual identity, we ensure impactful designs .",
   },
@@ -38,7 +38,7 @@ const services = [
     id: 5,
     title: "Photography",
     category: "Services",
-    image: "/Images/photographer.jpg",
+    image: "./Images/photographer.jpg",
     description:
       "Think Digital's photography service captures moments with precision and creativity. From professional shoots to product photography.",
   },
@@ -46,7 +46,7 @@ const services = [
     id: 6,
     title: "Videography",
     category: "Services",
-    image: "/Images/videography.jpg",
+    image: "./Images/videography.jpg",
     description:
       "Creating compelling visual stories. From promotional content to corporate narratives, enhancing your brand's digital presence.",
   },
