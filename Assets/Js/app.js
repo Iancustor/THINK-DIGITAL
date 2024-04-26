@@ -30,7 +30,7 @@ const services = [
     id: 3,
     title: "Graphics Designing",
     category: "Services",
-    image: "./Images/graphics.jpg",
+    image: "/Images/graphics.jpg",
     description:
       "Think Digital's graphic design service delivers visually compelling solutions. From branding to visual identity, we ensure impactful designs .",
   },
@@ -38,7 +38,7 @@ const services = [
     id: 5,
     title: "Photography",
     category: "Services",
-    image: "./Images/photographer.jpg",
+    image: "/Images/photographer.jpg",
     description:
       "Think Digital's photography service captures moments with precision and creativity. From professional shoots to product photography.",
   },
@@ -46,7 +46,7 @@ const services = [
     id: 6,
     title: "Videography",
     category: "Services",
-    image: "./Images/videography.jpg",
+    image: "/Images/videography.jpg",
     description:
       "Creating compelling visual stories. From promotional content to corporate narratives, enhancing your brand's digital presence.",
   },
@@ -106,5 +106,3 @@ function enableDarkMode() {
   theme = "dark";
   localStorage.setItem("theme", "dark");
 }
-
-
